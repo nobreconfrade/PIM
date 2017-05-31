@@ -38,6 +38,7 @@ def hough_line(img):
 image = np.zeros((50,50))
 image[10:40, 10:40] = np.eye(30)
 accumulator, thetas, rhos = hough_line(image)
+image.show()
 
 # Easiest peak finding based on max votes
 idx = np.argmax(accumulator)
